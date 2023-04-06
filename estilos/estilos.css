@@ -70,7 +70,63 @@ nav h1 {
     gap: 8px;
 }
 
-.active{
+@media (max-width: 1115px) {
+    .lista {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav div h1 {
+        font-size: 40px;
+    }
+
+    .seccion {
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        flex-direction: column;
+        height: 600px !important;
+        padding-top: 35px;
+    }
+
+    .seccion h1,
+    p {
+        position: static !important;
+        text-align: center;
+    }
+
+    .seccion h1 {
+        font-size: 45px !important;
+    }
+
+    .seccion p {
+        font-size: 25px !important;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px !important;
+    }
+
+    .caja{
+        margin: auto 30px;
+        text-align: center;
+        padding: 35px !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .caja img{
+        display: none;
+    }
+
+}
+
+.active {
     text-decoration: none;
     list-style: none;
     color: rgba(10, 0, 38, 0.867);
@@ -196,21 +252,42 @@ nav h1 {
     }
 }
 
-main {
-    margin-bottom: 100px;
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-.mainh1{
+.mainh1 {
     text-align: center;
-    margin-bottom: 40px;
     text-transform: uppercase;
     font-size: 50px;
     color: rgba(10, 0, 38, 0.867);
     font-weight: 800;
-    margin-top: 40px
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.menu{
+.mainh2{
+    text-align: center;
+    font-size: 24px;
+}
+
+.mainh2 a{
+    color: rgba(10, 0, 38, 0.867);
+}
+
+.mainh2 span{
+    color: #6b6b6b;
+}
+
+main {
+    margin-bottom: 70px;
+}
+
+.menu {
     display: flex;
     justify-content: center;
     gap: 70px;
@@ -233,8 +310,9 @@ main {
     cursor: pointer;
 }
 
-.divh1:hover{
+.divh1:hover {
     background-color: rgb(7, 0, 26);
+    transition: 300ms;
 }
 
 .divh1 a {
@@ -242,7 +320,7 @@ main {
     color: white;
 }
 
-footer{
+footer {
     height: 100px;
     background-color: #f1f1f1;
     display: flex;
@@ -252,13 +330,13 @@ footer{
     font-size: 15px;
 }
 
-.maindp{
+.maindp {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.caja{
+.caja {
     height: 600px;
     width: 900px;
     background-color: rgba(10, 0, 38, 0.867);
@@ -270,14 +348,14 @@ footer{
     align-items: center;
 }
 
-.caja ul{
+.caja ul {
     list-style: none;
     color: white;
     line-height: 1.9;
     font-size: 20px;
 }
 
-.caja img{
+.caja img {
     height: 94%;
     width: 50%;
     object-fit: cover;
@@ -285,6 +363,10 @@ footer{
     border-radius: 15px;
 }
 
-.caja b{
+.caja b {
     font-size: 35px;
+}
+
+.caja span{
+    color: #d6d6d6;
 }
