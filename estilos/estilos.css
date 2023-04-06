@@ -148,6 +148,7 @@ nav h1 {
 
 .secciones:hover {
     background-color: #f1f1f1;
+    transition: 250ms;
 }
 
 .secciones:active {
@@ -311,11 +312,11 @@ main {
 }
 
 .divh1:hover {
-    background-color: rgb(7, 0, 26);
+    background-color: #1f1930;
     transition: 300ms;
 }
 
-.divh1 a {
+.menu a {
     text-decoration: none;
     color: white;
 }
@@ -346,12 +347,13 @@ footer {
     justify-content: space-between;
     border-radius: 15px;
     align-items: center;
+    gap: 40px;
 }
 
 .caja ul {
     list-style: none;
     color: white;
-    line-height: 1.9;
+    line-height: 1.8;
     font-size: 20px;
 }
 
