@@ -281,7 +281,7 @@ nav h1 {
 }
 
 @media (max-width: 500px){
-    .mainh1{
+    .mainh1_1{
         font-size: 40px !important;
     }
 }
