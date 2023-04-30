@@ -70,7 +70,7 @@ nav h1 {
     gap: 8px;
 }
 
-@media (max-width: 1115px) {
+@media (max-width: 1350px) {
     .lista {
         display: none;
     }
@@ -107,7 +107,8 @@ nav h1 {
     }
 
     .menu{
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: 40px !important;
     }
@@ -324,11 +325,13 @@ main {
     align-items: center;
     text-align: center;
     cursor: pointer;
+    transition: 300ms;
 }
 
 .divh1:hover {
     background-color: #1f1930;
     transition: 300ms;
+    transform: scale(1.03);
 }
 
 .menu a {
