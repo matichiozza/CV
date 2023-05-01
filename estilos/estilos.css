@@ -78,13 +78,17 @@ label {
     display: none;
 }
 
+hr{
+    display: none;
+}
+
 @media (max-width: 1100px) {
 
     .secciones:active {
         color: #1f1930 !important;
     }
 
-    .active{
+    .active {
         background-color: #6b6b6b00 !important;
         color: #1f1930 !important;
     }
@@ -93,13 +97,24 @@ label {
         background-color: #f1f1f100 !important;
     }
 
-    input:checked~ul {
+
+    input:checked~.lista {
         display: block;
-        position: fixed;
-        top: 120px;
+        position: absolute;
+        top: 90px;
         right: 0px;
         background-color: white;
         z-index: 1;
+        width: 190px;
+        padding-right: 12px;
+        border-radius: 0px 0px 0px 15px;
+        border: #1f1930 2px solid;
+    }
+
+    input:checked ~ .lista hr{
+        display: block;
+		border-top: 2px solid #1f1930;
+        width: 1000%;
     }
 
     input:checked~label {
@@ -111,7 +126,7 @@ label {
         background: #f1f1f1;
     }
 
-    .labeldiv{
+    .labeldiv {
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -127,7 +142,7 @@ label {
         justify-content: center;
         align-items: center;
         border: 2px solid #1f1930;
-        border-radius: 5px;
+        border-radius: 10px;
         width: 50px;
         height: 40px;
         font-size: 25px;
@@ -200,7 +215,7 @@ label {
     color: rgba(10, 0, 38, 0.867);
     font-weight: 500;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: rgba(10, 0, 38, 0.867);
     color: white;
 }
@@ -211,7 +226,7 @@ label {
     color: rgba(10, 0, 38, 0.867);
     font-weight: 500;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .secciones:hover {
@@ -385,7 +400,7 @@ main {
     text-transform: uppercase;
     background-color: rgba(10, 0, 38, 0.867);
     color: white;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 3px 20px;
     display: flex;
     justify-content: center;
