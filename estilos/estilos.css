@@ -61,7 +61,7 @@ nav h1 {
     color: rgba(10, 0, 38, 0.867);
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .lista {
@@ -80,11 +80,8 @@ label {
 
 @media (max-width: 1100px) {
 
-    /* .lista {
-        display: none;
-    } */
     .secciones:active {
-        background-color: rgba(255, 255, 255, 0.867) !important;
+        color: #1f1930 !important;
     }
 
     .active{
@@ -97,7 +94,6 @@ label {
     }
 
     input:checked~ul {
-        /*muestra todas el contenido de todas las etiquetas ul */
         display: block;
         position: fixed;
         top: 120px;
@@ -107,13 +103,11 @@ label {
     }
 
     input:checked~label {
-        /*muestra todo el contenido de todas las etiquetas label */
         background-color: #1f1930;
         color: white;
     }
 
     label:hover {
-        /*cambia el color de ☰ */
         background: #f1f1f1;
     }
 
@@ -123,29 +117,26 @@ label {
         justify-content: end;
     }
 
-    li {
-        /*elimina el margen  de cada botón */
+    .lista a li {
         text-align: right;
     }
 
     label {
-        /* dibuja la etiqueta ☰  con formato botón */
         margin-left: auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid #1f1930;
+        border: 2px solid #1f1930;
         border-radius: 5px;
         width: 50px;
         height: 40px;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 30px;
         font-weight: bold;
         user-select: none;
         cursor: pointer;
         background-color: rgb(255, 255, 255);
     }
-
 
     .lista {
         display: none;
@@ -156,7 +147,7 @@ label {
     }
 
     nav div h1 {
-        font-size: 40px;
+        font-size: 34px;
     }
 
     .seccion {
